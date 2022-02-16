@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="yard.sapyard05.controller.POHeaderView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <List id="idList12" items="{/Orders}" updateFinished="onFinish">
+                            <ObjectListItem type="Navigation" intro= "{CustomerID}" title="{OrderID}" press="onItemPress"></ObjectListItem>
+                        </List>
+                    </content>
+                    <headerContent>
+                        <Text id="idText12"></Text>
+                    </headerContent>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

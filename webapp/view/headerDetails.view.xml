@@ -1,0 +1,19 @@
+<mvc:View controllerName="yard.sapyard05.controller.headerDetails" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+xmlns:form="sap.ui.layout.form">
+    <Page title="Selected Order Full Details" navButtonPress="onBack" showNavButton="true">
+        <VBox id="idVBox">
+            <form:SimpleForm>
+                <Label text="Order Id"/>
+                <Text text="{OrderID}"/>
+                <Label text="Customer Id"/>
+                <Text text="{CustomerID}"/>
+                <Label text="Shipping Name"/>
+                <Text text="{ShipName}"/>
+                <Label text="Shipping to"/>
+                <Text text="{ShipCountry}"/>
+            </form:SimpleForm>
+            <Button text="List of items for the Order" press="getOrderItemDetails"></Button>
+        </VBox>
+        <VBox></VBox>
+    </Page>
+</mvc:View>
